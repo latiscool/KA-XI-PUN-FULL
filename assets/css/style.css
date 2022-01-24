@@ -1,0 +1,89 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+img {
+  max-height: 7em;
+  text-align: center;
+}
+
+#farobot {
+  color: #ffc286;
+}
+
+#fahuman {
+  color: #11e7dc;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.li-acceso {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #333;
+}
+
+.titulo,
+.centro,
+#sec01,
+#sesion {
+  text-align: center;
+}
+
+.li-juego {
+  float: right;
+}
+
+#data {
+  text-align: center;
+  color: #ffc286;
+  background-color: #333;
+  margin-top: 10px;
+}
+
+.box,
+.row1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: auto;
+}
+
+input {
+  width: 100%;
+  margin: auto;
+}
+
+#okButton {
+  margin-top: 10px;
+}
+
+.mpiedra {
+  padding: 0 30px;
+}
+
+.seccionH,
+.seccionR {
+  padding: 0 100px;
+}
+
+hr {
+  border: 10px solid #849784;
+  border-radius: 5px;
+  padding: 10px 0;
+}

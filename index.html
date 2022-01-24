@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>K-Xi-Pun</title>
+  <!-- FAVICON -->
+  <link rel="shortcut icon" href="./assets/img/logi.svg" type="image/x-icon">
+
+  <!-- FONT AWESOME  -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <!-- GOOGLE FONTS - OPEN SANS -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+  <!-- MI ESTILO -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- SECCION ACCESO
+  ******************** -->
+  <header id="acceso">
+    <!-- NAVBAR  CSS-->
+    <ul>
+      <li class="li-acceso">
+        <a id="atab" href="#acceso">Acceso</a>
+      </li>
+    </ul>
+    <div class="centro">
+      <img src="./assets/img/logi.svg" alt="logo">
+      <h1>K-Xi-PUN</h1>
+    </div>
+    <!-- FORMULARIO -->
+    <div class="box">
+      <form onsubmit="return setAction(this)" id="validacion" name=" formulario">
+        <div class="form-group">
+          <label for="nombre">Nombre : </label>
+          <input value="luis" type="text" name="nombre" id="uname" class="form-control" placeholder="Nombre"
+            aria-describedby="helpId" required>
+        </div>
+        <div class="form-group">
+          <label for="">Contraseña : </label>
+          <input value="1234" type="password" class="form-control" name="password" id="pwd" placeholder="Contraseña"
+            required>
+        </div>
+        <button id="okButton" type="submit" onclick="Validar();">Enviar</button>
+        <div id="data">
+          <span>Usuario : luis</span><br>
+          <span>Contraseña : 1234</span>
+        </div>
+      </form>
+    </div>
+  </header>
+
+
+
+  <!-- SECCION JUEGO
+  ******************** -->
+  <main id="k-xi-pun">
+
+    <div class="centro">
+      <a href="index.html"><img src="./assets/img/logi.svg" alt="logo">
+        <h1>K-Xi-PUN</h1>
+      </a>
+    </div>
+    <ul>
+      <li class="li-juego">
+        <a href="#juego">Juego</a>
+      </li>
+    </ul>
+    <h1>K-Xi-PUN</h1>
+
+    <section id="seleccion">
+      <h2 id=" sec01">SELECIONA UNA OPCION</h2>
+      <hr>
+      <div class="row1">
+        <div class="mtijera">
+          <span id="fa-hand-scissors">TIJERA
+            <i class="fas fa-hand-scissors fa-10x" value="fa-hand-scissors"></i>
+          </span>
+        </div>
+        <div class="mpiedra">
+          <span id="fa-fist-raised">PIEDRA
+            <i class="fas fa-fist-raised fa-10x" value="fa-fist-raised"></i>
+          </span>
+        </div>
+        <div class="mpapel">
+          <span id="fa-hand-paper">PAPEL
+            <i class="fas fa-hand-paper fa-10x" value="fa-hand-paper"></i>
+          </span>
+          </p>
+        </div>
+      </div>
+    </section>
+    <hr>
+    <section id="sesion">
+      <h2 id="resultado-sesion">RESULTADO SESION</h2>
+      <div class="resultadosSesion">
+        <div class="row1">
+          <div class="seccionH">
+            <h4 id="humano">HUMANO</h4>
+            <i class="fas fa-user fa-4x" id="fahuman"></i>
+          </div>
+          <div class="seccionR">
+            <h4 id="robot">ROBOT</h4>
+            <i class="fas fa-robot fa-4x" id="farobot"></i>
+          </div>
+        </div>
+      </div>
+      <h4 class="text-center">REGISTRO DE PUNTAJE</h4>
+      <span id="registro-puntaje"></span>
+    </section>
+  </main>
+
+  <!-- MI JS -->
+  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/validacion.js"></script>
+
+</body>
+
+</html>
